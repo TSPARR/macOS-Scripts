@@ -1,0 +1,16 @@
+#!/usr/bin/expect -f
+# OD Archive.exp
+# Archives the OD master
+set timeout 300
+log_user 0
+set now [clock seconds]
+set date [clock format $now -format {%Y%m%d}]
+set archive_path ""
+set archive_password ""
+set archive_name ""
+
+send_user "Backing up Open Directory Database…\n"
+spawn /usr/sbin/slapconfig -backupdb $archive_path/$archive_name$date
+expect "Enter archive password"
+send "$archive_password\r"
+expect eof
