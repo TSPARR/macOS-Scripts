@@ -12,7 +12,7 @@ unset IFS
 
 for (( i=1; i<"${#interfaces[@]}"; i++ )); do
 	curInt="${interfaces["$i"]}"
-	curMAC="$(networksetup -getmacaddress $curInt | awk '{print $3}')"
+	curMAC="$(networksetup -getmacaddress "$curInt" | awk '{print $3}')"
 	curName="${names["$i"]}"
 		if [[ "$curMAC" != "(null)" ]]; then
 			echo "$curName ($curInt) $curMAC"

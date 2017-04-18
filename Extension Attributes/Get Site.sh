@@ -1,6 +1,6 @@
 #!/bin/bash
 # jamf Site Extension Attribute.sh
-# Uses the API to grab the currently assigned site in the jamf Pro Server
+# Uses the API to grab the currently assigned site in the jamf|PRO Server
 
 #define some variables
 jssURL="https://<jssURL>:8443"

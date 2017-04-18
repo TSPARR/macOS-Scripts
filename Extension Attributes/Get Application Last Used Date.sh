@@ -9,7 +9,7 @@ if [ ! -e "$APPLICATION_PATH" ]; then
 fi
 
 if [ -e "$APPLICATION_PATH" ]; then
-    result=`mdls "$APPLICATION_PATH" | grep kMDItemLastUsedDate | awk '{ $1 = $1 } { print }' | cut -c 23-41`
+    result=$(mdls "$APPLICATION_PATH" | grep kMDItemLastUsedDate | awk '{ $1 = $1 } { print }' | cut -c 23-41)
 fi
 
 if [ "$result" == "" ]; then
