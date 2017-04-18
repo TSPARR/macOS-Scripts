@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Remove Keychains.sh
 # This script will remove the keychains of all mobile accounts
 

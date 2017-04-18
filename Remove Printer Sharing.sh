@@ -9,4 +9,3 @@ cupsctl --no-share-printers
 lpstat -p | grep printer | awk '{print $2}'| xargs -I{} lpadmin -p {} -o printer-is-shared=false
 
 exit
-`

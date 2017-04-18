@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #Remove Adobe CS6 Preferences
 #Script which takes in parameters to remove Adobe CS6 preference files.
 
@@ -22,7 +22,7 @@ do
 	   		elif [[ -d "${prefFiles[$i]}" ]]; then
 	   			rm -R "${prefFiles[$i]}"
 	   		else
-	   			echo "The file "${prefFiles[$i]}" either does not exist or has already been deleted."
+	   			echo "The file ${prefFiles[$i]} either does not exist or has already been deleted."
 	   		fi
 		done
 	fi
@@ -42,7 +42,7 @@ do
 			elif [[ -d "${prefFiles[$i]}" ]]; then
 	   			rm -R "${prefFiles[$i]}"
 			else
-				echo "The file "${prefFiles[$i]}" either does not exist or has already been deleted."
+				echo "The file ${prefFiles[$i]} either does not exist or has already been deleted."
 			fi
 		done
 	fi
@@ -62,7 +62,7 @@ do
 			elif [[ -d "${prefFiles[$i]}" ]]; then
 	   			rm -R "${prefFiles[$i]}"
 			else
-				echo "The file "${prefFiles[$i]}" either does not exist or has already been deleted."
+				echo "The file ${prefFiles[$i]} either does not exist or has already been deleted."
 			fi
 		done
 	fi

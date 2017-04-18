@@ -21,5 +21,5 @@ localAccounts=$(dscl . list /Users UniqueID | awk '$2 > 500 { print $1 }')
 
 for user in $localAccounts ;
 do
-  rm -Rfv /Users/$user/Library/Application\ Support/Fortinet/
+  rm -Rfv /Users/"$user"/Library/Application\ Support/Fortinet/
 done
